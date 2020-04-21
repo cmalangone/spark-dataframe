@@ -3,4 +3,4 @@ resolvers += "bintray-spark-packages" at "https://dl.bintray.com/spark-packages/
 
 addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.6.1")
 // The Play plugin
-addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.8.1")
+//addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.8.1")

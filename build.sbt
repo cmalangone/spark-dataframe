@@ -10,7 +10,7 @@ val buildResolvers = Seq(
 
 
 
-lazy val root = (project in file(".")).enablePlugins(PlayScala)
+lazy val root = (project in file("."))
   .settings(
     inThisBuild(
       List(

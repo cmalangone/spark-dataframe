@@ -1,0 +1,14 @@
+/platform-etl-openfda-faers.iml
+/.idea
+/input
+/out
+/metorikku-standalone.jar
+/target
+/project/project
+/project/target
+/input/
+/output
+/output/
+/tmp
+/scratch
+/resources/amm.application.conf

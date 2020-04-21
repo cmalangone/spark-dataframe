@@ -28,3 +28,7 @@ spark-submit --class io.opentargets.etl.Main \
  --conf spark.executor.extraJavaOptions="-Dconfig.file=/Users/cinzia/gitRepositories/platform-etl-backend/resources/app.conf" \
  --conf 'spark.executor.extraJavaOptions= Dconfig.file=/Users/cinzia/gitRepositories/platform-etl-backend/resources/app.conf' \
 target/scala-2.12/io-opentargets-etl-backend-assembly-0.1.0.jar
+
+
+
+https://www.scala-sbt.org/download.html

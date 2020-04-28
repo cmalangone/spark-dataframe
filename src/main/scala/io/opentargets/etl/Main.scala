@@ -7,6 +7,8 @@ import com.typesafe.config.{
   ConfigObject,
   ConfigRenderOptions
 }
+import org.apache.spark.SparkConf
+import org.apache.spark.sql._
 import io.opentargets.etl.backend._
 
 object ETL extends LazyLogging {
@@ -46,7 +48,8 @@ object ETL extends LazyLogging {
 
   def apply(step: String) = {
     val otc = Configuration.load
-    implicit val spark = SparkSessionWrapper.session
+    
+	implicit val ss = SparkSessionWrapper.session
 
     step match {
       case "all" =>

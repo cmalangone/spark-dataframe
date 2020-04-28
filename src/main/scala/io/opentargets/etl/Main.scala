@@ -26,8 +26,10 @@ object ETL extends LazyLogging {
     "ddr"
   )
 
-  def applySingleStep(step: String, otc: Config) = {
-    step match {
+  def applySingleStep(step: String, otc: Config) (implicit ss: SparkSession) = {
+    import ss.implicits._
+    
+	step match {
       case "disease" =>
         logger.info("run step disease")
       case "target" =>

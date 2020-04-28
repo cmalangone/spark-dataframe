@@ -6,7 +6,7 @@ import io.opentargets.etl.backend._
 
 object ETL extends LazyLogging {
 
-	def applySingleStep(step:String) = {
+	def applySingleStep(step:String, otc: Config) = {
 	    step match {
 	      case "disease" =>
 	        logger.info("run step disease")
@@ -32,7 +32,7 @@ object ETL extends LazyLogging {
       case "all" =>
         logger.info("RUN ALL")
       case _ =>
-	    ETL.applySingleStep(step)
+	    ETL.applySingleStep(step, otc)
     }
   }
 }

@@ -32,6 +32,7 @@ object ETL extends LazyLogging {
         logger.info("run step disease")
       case "target" =>
         logger.info("run step target")
+		Target(otc)
       case "reactome" =>
         logger.info("run step reactome (rea)")
       case "eco" =>

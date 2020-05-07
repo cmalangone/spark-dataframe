@@ -181,7 +181,6 @@ object Target extends LazyLogging {
 	
     val inputDataFrame = SparkSessionWrapper.loader(mappedInputs)
 
-
     // The gene index contains keys with spaces. This step creates a new Dataframe with the proper keys
     val targetDFnewSchema = SparkSessionWrapper.replaceSpacesSchema(inputDataFrame("target"))
 
